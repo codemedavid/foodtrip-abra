@@ -511,7 +511,7 @@ const MerchantsList: React.FC = () => {
 
         {/* Search Section */}
         <section>
-          <h1 className="text-3xl font-bold text-green-950 mb-6 leading-tight">Rownel Food Delivery</h1>
+          <h1 className="text-3xl font-bold text-green-950 mb-6 leading-tight">food trip - abra</h1>
           <div className="relative">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input

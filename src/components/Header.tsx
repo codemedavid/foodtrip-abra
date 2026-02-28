@@ -29,7 +29,7 @@ const Header: React.FC<HeaderProps> = ({ onCartClick }) => {
             ) : (
               <img 
                 src={siteSettings?.site_logo || "/logo.jpg"} 
-                alt={siteSettings?.site_name || "Row-Nel FooDelivery"}
+                alt={siteSettings?.site_name || "food trip - abra"}
                 className="w-10 h-10 rounded-full object-cover border-2 border-gray-200"
                 onError={(e) => {
                   e.currentTarget.src = "/logo.jpg";
@@ -41,10 +41,7 @@ const Header: React.FC<HeaderProps> = ({ onCartClick }) => {
                 {loading ? (
                   <div className="w-24 h-6 bg-gray-200 rounded animate-pulse" />
                 ) : (
-                  <>
-                    <span className="text-gray-900">{siteSettings?.site_name?.split(' ')[0] || "Row-Nel"}</span>
-                    <span className="text-yellow-brand"> {siteSettings?.site_name?.split(' ')[1] || "FooDelivery"}</span>
-                  </>
+                  <span className="text-gray-900">{siteSettings?.site_name || "food trip - abra"}</span>
                 )}
               </h1>
               <p className="text-xs text-gray-500 hidden lg:block">Food Delivery</p>

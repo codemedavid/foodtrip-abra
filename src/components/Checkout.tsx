@@ -189,7 +189,7 @@ const Checkout: React.FC<CheckoutProps> = ({ onBack }) => {
     const mergedNotes = landmark ? `${notes ? notes + ' | ' : ''}Landmark: ${landmark}` : notes;
     
     let orderDetails = `
-🛒 Row-Nel FooDelivery ORDER
+🛒 food trip - abra ORDER
 
 👤 Customer: ${trimmedCustomerName}
 📞 Contact: ${trimmedContactNumber}
@@ -241,14 +241,14 @@ orderDetails += `
 
 ${mergedNotes ? `📝 Notes: ${mergedNotes}` : ''}
 
-Please confirm this order to proceed. Thank you for choosing Row-Nel FooDelivery! 🥟
+Please confirm this order to proceed. Thank you for choosing food trip - abra! 🥟
     `.trim();
 
     // Copy order details to clipboard as backup
     copyOrderDetails(orderDetails);
 
     // Try both page ID formats to be safe
-    const pageId = 'RowNelFooDelivery';
+    const pageId = 'foodtripabra';
     const encodedMessage = encodeURIComponent(orderDetails);
     
     // Try the m.me format first

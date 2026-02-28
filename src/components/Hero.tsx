@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl md:text-6xl font-noto font-semibold text-black mb-6 animate-fade-in">
          Authentic Taiwanese Dimsum
-          <span className="block text-red-600 mt-2">ClickEats</span>
+          <span className="block text-red-600 mt-2">food trip - abra</span>
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-slide-up">
           Timeless Taiwanese Flavors, Freshly Made
